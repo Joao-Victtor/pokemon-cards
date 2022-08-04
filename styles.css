@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    font-size: 62.5%;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: url('./assets/fundo-site.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+header img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    background-color: #333;
+    padding: 1.2rem;
+}
+
+p {
+    color: #000;
+    font-size: 1.4rem;
+}
+
+/* Botoes */
+.btn-seta {
+    background-color: white;
+    display: flex;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-seta img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.rotate img {
+    transform: rotate(180deg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+main .container-card {
+    margin-top: 6rem;
+}
+
+ul {
+    padding: 1.2rem;
+}
+
+ul.pikachu-card {
+    display: inline-block;
+    width: 31rem;
+    height: 52rem;
+    border-radius: 1.5rem;
+     
+    background: url('./assets/fundo-card-1.jpg') no-repeat top left;
+}
+
+main .nome-pokemon {
+    background-color: magenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 1rem .8rem;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+
+.nome-pokemon span {
+    display: inline-block;
+    background-color: #000;
+    border-radius: 1.5rem;
+    padding: .6rem 1rem; 
+    font-size: 1.6rem;
+}
+
+.picture-pokemon {
+    width: 28rem;
+    height: 28rem;
+    padding: 2rem; 
+    margin-inline: auto;
+}
+
+
+.descricao p {
+    background-color: rgba(232, 232, 231, .8);
+    padding: 1.2rem;
+    max-height: 11.5rem;
+    overflow-y: auto;
+}
