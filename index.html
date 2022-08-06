@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width-device=width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut icon" href="./assets/pokebola.png">
   <title>Projeto Pokémon slider</title>
 </head>
 <body>
@@ -14,35 +15,67 @@
     </h1>
   </header>
   <main>
-    <div class="btn-seta rotate">
+    <button type="button" class="btn-seta rotate" id="btn-voltar">
       <img src="./assets/seta.png" alt="botão voltar">
-    </div>
-    <div class="container-card">
-      <ul class="pikachu-card">
-        <li>
-          <div class="nome-pokemon">
-            <h2>Pikachu</h2>
-            <span>HP 300</span>
+    </button>
+      <ul class="container-cards">
+        <li class="visivel cartao">
+          <div class="cards">
+            <div class="nome-pokemon">
+              <h2>Pikachu</h2>
+              <span>HP 300</span>
+            </div>
+            <div class="picture-pokemon">
+              <img src="./assets/pikachu.png" alt="pikachu">
+            </div>
+            <div class="descricao"> 
+              <h4>Descrição</h4>
+              <p>
+                Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem um formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta.
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <div class="picture-pokemon">
-            <img src="./assets/pikachu.png" alt="pikachu">
+       </li>
+
+        <li class="fundo-2 cartao">
+          <div class="cards">
+            <div class="nome-pokemon">
+              <h2>Charizard</h2>
+              <span>HP 800</span>
+            </div>
+            <div class="picture-pokemon">
+              <img src="./assets/charizard.png" alt="pikachu">
+            </div>
+            <div class="descricao"> 
+              <h4>Descrição</h4>
+              <p>
+                Geralmente, um Charizard é competitivo. Ele adora a batalha e seu espírito competitivo também é notável, uma vez que nunca vai cuspir fogo em um inimigo mais fraco a menos que provocado ou ordenado. Quando fica muito irritado, as chamas em sua cauda se tornam branco-azuladas.
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <div class="descricao"> 
-            <h4>Descrição</h4>
-            <p>
-              Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem um formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta.
-            </p>
+       </li>
+
+        <li class="fundo-3 cartao">
+          <div class="cards">
+            <div class="nome-pokemon">
+              <h2>Mewtwo</h2>
+              <span>HP 1200</span>
+            </div>
+            <div class="picture-pokemon">
+              <img src="./assets/mewtwo.png" alt="pikachu">
+            </div>
+            <div class="descricao"> 
+              <h4>Descrição</h4>
+              <p>
+                Mewtwo foi criado geneticamente em um laboratório, sendo um clone do misterioso antigo Pokémon Mew. É uma criatura com uma postura humanóide, mas tem algumas características felinas.
+              </p>
+            </div>
           </div>
-        </li>
+       </li>
       </ul>
-    </div>
-    <div class="btn-seta">
+    <button type="button" class="btn-seta" id="btn-avancar">
       <img src="./assets/seta.png" alt="botão voltar">
-    </div>
+    </button>
   </main>
 <script type="text/javascript" src="script.js"></script>
 </body>

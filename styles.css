@@ -22,6 +22,7 @@ body {
 header {
     padding-top: 5rem;
     text-align: center;
+    margin-bottom: 6rem;  
 }
 
 header img {
@@ -57,7 +58,14 @@ p {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
+    border: none;
+    transition: .5s; 
+    cursor: pointer;
 
+}
+
+button:hover {
+    background-color: #8201BD; 
 }
 
 .btn-seta img {
@@ -76,22 +84,30 @@ main {
     gap: 8rem;
 }
 
-main .container-card {
-    margin-top: 6rem;
-}
-
-ul {
+li {
     padding: 1.2rem;
+    border-radius: 1.5rem;
+    background: url('./assets/fundo-card-1.jpg') no-repeat top left;
+    position: absolute;
+    opacity: 0; 
 }
 
-ul.pikachu-card {
+li.fundo-2 {
+    background: url('./assets/fundo-card-2.jpg') no-repeat top left;
+}
+
+li.fundo-3 {
+background: url('./assets/fundo-card-3.jpg') no-repeat top left;
+}
+
+
+ul.container-cards {
     display: inline-block;
     width: 31rem;
     height: 52rem;
-    border-radius: 1.5rem;
-     
-    background: url('./assets/fundo-card-1.jpg') no-repeat top left;
+    position: relative;
 }
+
 
 main .nome-pokemon {
     background-color: magenta;
@@ -100,7 +116,7 @@ main .nome-pokemon {
     align-items: center;
     background-color: rgba(179, 177, 185, 0.7);
     padding: 1rem .8rem;
-    border-radius: 1rem 1rem 0 0;
+        border-radius: 1rem 1rem 0 0;
     
 }
 
@@ -125,4 +141,8 @@ main .nome-pokemon {
     padding: 1.2rem;
     max-height: 11.5rem;
     overflow-y: auto;
+}
+
+.visivel {
+    opacity: 1;
 }
