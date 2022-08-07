@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: url('./assets/fundo-site.png') no-repeat center center fixed;
+    background: url('./assets/fundo-site.png') no-repeat top left fixed;
     background-size: cover;
     color: white;
 }
@@ -30,6 +30,7 @@ header img {
     height: 2.5rem;
 }
 
+/* estilos padrões */
 h1 {
     font-size: 3.2rem;
 }
@@ -47,6 +48,18 @@ h4 {
 p {
     color: #000;
     font-size: 1.4rem;
+}
+
+li {
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    opacity: 0; 
+}
+
+/* Deixar cartões visiveis quando aplicada */
+.visivel {
+    opacity: 1;
 }
 
 /* Botoes */
@@ -68,6 +81,8 @@ button:hover {
     background-color: #8201BD; 
 }
 
+
+/* imagem botão */
 .btn-seta img {
     width: 4rem;
     height: 4rem;
@@ -77,6 +92,7 @@ button:hover {
     transform: rotate(180deg);
 }
 
+/* Conteúdo principal */
 main {
     display: flex;
     justify-content: center;
@@ -84,22 +100,14 @@ main {
     gap: 8rem;
 }
 
-li {
-    padding: 1.2rem;
-    border-radius: 1.5rem;
-    background: url('./assets/fundo-card-1.jpg') no-repeat top left;
-    position: absolute;
-    opacity: 0; 
+main .nome-pokemon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 1rem .8rem;
+    border-radius: 1rem 1rem 0 0;
 }
-
-li.fundo-2 {
-    background: url('./assets/fundo-card-2.jpg') no-repeat top left;
-}
-
-li.fundo-3 {
-background: url('./assets/fundo-card-3.jpg') no-repeat top left;
-}
-
 
 ul.container-cards {
     display: inline-block;
@@ -108,16 +116,16 @@ ul.container-cards {
     position: relative;
 }
 
+li.fundo-1 {
+    background: url('./assets/fundo-card-1.jpg') no-repeat top left;
+}
 
-main .nome-pokemon {
-    background-color: magenta;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(179, 177, 185, 0.7);
-    padding: 1rem .8rem;
-        border-radius: 1rem 1rem 0 0;
-    
+li.fundo-2 {
+    background: url('./assets/fundo-card-2.jpg') no-repeat top left;
+}
+
+li.fundo-3 {
+background: url('./assets/fundo-card-3.jpg') no-repeat top left;
 }
 
 .nome-pokemon span {
@@ -141,8 +149,4 @@ main .nome-pokemon {
     padding: 1.2rem;
     max-height: 11.5rem;
     overflow-y: auto;
-}
-
-.visivel {
-    opacity: 1;
 }
